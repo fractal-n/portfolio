@@ -11,13 +11,25 @@
               :class="[$vuetify.breakpoint.smAndDown ? 'display-2': 'display-3']"
               class="font-weight-black"
             >HIEN NGUYEN</div>
+
             <br />
+            <br />
+
+            <v-avatar size="150">
+              <v-img src="@/assets/portrait-small.png" alt="me"></v-img>
+            </v-avatar>
+
+            <br />
+            <br />
+
             <div
               :class="[$vuetify.breakpoint.smAndDown ? 'display-1' : 'display-2']"
               class="font-weight-light"
             >I am a Software Developer who is in love with backend development, software architecture, and artificial intelligence.</div>
+
             <br />
             <br />
+
             <v-btn x-large color="success" @click="$vuetify.goTo('#projects')">View my projects</v-btn>
           </v-col>
         </v-row>
