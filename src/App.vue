@@ -1,60 +1,45 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+    <v-app-bar app>
+      <v-avatar class="mr-3">
+        <v-img contain src="./assets/logo_transparent-no-text.png"></v-img>
+      </v-avatar>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+      <v-toolbar-title class="font-weight-black headline">fractal-n</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+      <v-btn icon :href="linkedIn" target="_blank">
+        <v-icon x-large>mdi-linkedin</v-icon>
+      </v-btn>
+
+      <v-btn icon :href="gitHub" target="_blank">
+        <v-icon x-large>mdi-github</v-icon>
       </v-btn>
     </v-app-bar>
 
     <v-content>
-      <HelloWorld/>
+      <Intro />
+      <Projects />
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Intro from "./components/Intro";
+import Projects from "./components/Projects";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    HelloWorld,
+    Intro,
+    Projects
   },
 
   data: () => ({
-    //
-  }),
+    linkedIn: "https://www.linkedin.com/in/hien-nguyen-5b503533/",
+    gitHub: "https://github.com/fractal-n"
+  })
 };
 </script>
