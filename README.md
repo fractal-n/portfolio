@@ -2,7 +2,7 @@
 
 ## About
 
-This project is a central showcase for my personal projects.
+This project is a central showcase for my personal projects. [The portfolio link is here](https://fractal-n.github.io/portfolio/).
 
 ## Tech stack
 

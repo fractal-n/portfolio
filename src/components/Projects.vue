@@ -3,7 +3,12 @@
     <div class="py-12"></div>
 
     <v-container>
-      <h2 id="projects" class="display-2 font-weight-bold mb-3 text-uppercase text-center">Projects</h2>
+      <h2
+        id="projects"
+        class="display-2 font-weight-bold mb-3 text-uppercase text-center"
+      >
+        Projects
+      </h2>
 
       <v-responsive class="mx-auto mb-12" width="56">
         <v-divider class="mb-1"></v-divider>
@@ -22,7 +27,7 @@
           <v-card>
             <v-card-title>{{ name }}</v-card-title>
 
-            <v-img :src="screenshot" alt="project screenshot"></v-img>
+            <v-img :src="getImage(screenshot)" alt="project screenshot"></v-img>
 
             <v-card-text>{{ description }}</v-card-text>
 
@@ -50,7 +55,12 @@ import data from "../store/projects.json";
 
 export default {
   data: () => ({
-    projects: data.projects
-  })
+    projects: data.projects,
+  }),
+  methods: {
+    getImage(fileName) {
+      return require(`../assets/${fileName}`);
+    },
+  },
 };
 </script>
