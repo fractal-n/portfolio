@@ -1,5 +1,4 @@
-// var exec = require('child_process').exec;
-import { exec } from "child_process";
+var exec = require("child_process").exec;
 
 let execPromise = (cmd) => {
   return new Promise(function(resolve, reject) {
@@ -10,7 +9,16 @@ let execPromise = (cmd) => {
   });
 };
 
-let commands = ["npm install", "echo 'hello'"];
+let commands = [
+  "git checkout --orphan gh-pages",
+  "npm run build",
+  "git --work-tree dist add --all",
+  "git --work-tree dist commit -m 'Deploy'",
+  "git push origin HEAD:gh-pages --force",
+  "rm -r dist",
+  "git checkout -f master",
+  "git branch -D gh-pages",
+];
 
 commands
   .reduce(async (p, cmd) => {
