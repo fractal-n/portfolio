@@ -29,9 +29,9 @@ commands
   }, Promise.resolve([]))
   .then(
     (results) => {
-      console.log("Successfully deployed", results);
+      console.log(results, "Successfully deployed");
     },
     (err) => {
-      console.log("Failed!!!", err);
+      console.log(err, "Failed!!!");
     }
   );
