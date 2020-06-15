@@ -37,6 +37,10 @@ export default {
     Projects
   },
 
+  mounted: () => {
+    document.title = "fractal-n";
+  },
+
   data: () => ({
     linkedIn: "https://www.linkedin.com/in/hien-nguyen-5b503533/",
     gitHub: "https://github.com/fractal-n"
