@@ -4,10 +4,14 @@
 
 This project is a central showcase for my personal projects. [The portfolio link is here](https://fractal-n.github.io/portfolio/).
 
+## Screenshot
+
+Use 1024px x 768px (4:3 ratio) size. Use Screen Snip with iPad view at portrait. Then crop with Paint 3D.
+
 ## Tech stack
 
-Vue CLI
-Vuetify
+VueJS
+VuetifyJS
 GitHub Pages
 
 ## Deploy on GitHub Pages

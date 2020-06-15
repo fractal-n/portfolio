@@ -3,7 +3,12 @@
     <div class="py-12"></div>
 
     <v-container>
-      <h2 id="projects" class="display-2 font-weight-bold mb-3 text-uppercase text-center">Projects</h2>
+      <h2
+        id="projects"
+        class="text-h2 font-weight-bold mb-3 text-uppercase text-center"
+      >
+        Projects
+      </h2>
 
       <v-responsive class="mx-auto mb-12" width="56">
         <v-divider class="mb-1"></v-divider>
@@ -22,7 +27,15 @@
 
       <v-row align="center" justify="center">
         <v-col
-          v-for="({ name, repoUrl, appUrl, description, screenshot, tags, favorite},
+          v-for="({
+            name,
+            repoUrl,
+            appUrl,
+            description,
+            screenshot,
+            tags,
+            favorite,
+          },
           i) in projects"
           :key="i"
           cols="12"
@@ -42,15 +55,23 @@
 
             <v-card-text>
               <v-container fluid>
-                <v-row>{{description}}</v-row>
+                <v-row>{{ description }}</v-row>
                 <v-row class="mt-4">
-                  <v-chip color="info" class="mr-3" v-for="(name, i) in tags" :key="i">{{name}}</v-chip>
+                  <v-chip
+                    color="info"
+                    class="mr-3"
+                    v-for="(name, i) in tags"
+                    :key="i"
+                    >{{ name }}</v-chip
+                  >
                 </v-row>
               </v-container>
             </v-card-text>
 
             <v-card-actions>
-              <v-btn :href="appUrl" target="_blank" color="success">See Demo</v-btn>
+              <v-btn :href="appUrl" target="_blank" color="success"
+                >See Demo</v-btn
+              >
               <v-spacer></v-spacer>
               <v-btn icon :href="repoUrl" target="_blank">
                 <v-icon large>mdi-github</v-icon>
@@ -70,7 +91,7 @@ import data from "../store/projects.json";
 
 export default {
   data: () => ({
-    projects: data.projects
+    projects: data.projects,
   }),
   computed: {
     // I was thinking about allowing user to filter tags using tag group, but it seems to take more time to do this than I initially thought
@@ -84,7 +105,7 @@ export default {
   methods: {
     getImage(fileName) {
       return require(`../assets/${fileName}`);
-    }
-  }
+    },
+  },
 };
 </script>
