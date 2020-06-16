@@ -4,9 +4,18 @@
       "name": "portfolio",
       "repoUrl": "https://github.com/fractal-n/portfolio",
       "appUrl": "https://fractal-n.github.io/portfolio/",
-      "description": "A simple portfolio to showcase my personal projects. It is hosted using GitHub Pages. The website is built using VueJS and VuetifyJS.",
+      "description": "My portfolio is built with VueJS and VuetifyJS and hosted on GitHub Pages.",
       "screenshot": "portfolio-screenshot.png",
       "tags": ["VueJS", "VuetifyJS"],
+      "favorite": false
+    },
+    {
+      "name": "my-team",
+      "repoUrl": "https://github.com/fractal-n/my-team",
+      "appUrl": "https://fractal-n.github.io/my-team/",
+      "description": "A simple frontend project to learn React",
+      "screenshot": "my-team-screenshot.png",
+      "tags": ["ReactJS", "Tachyons CSS"],
       "favorite": false
     }
   ]
