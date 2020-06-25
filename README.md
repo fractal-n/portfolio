@@ -6,7 +6,7 @@ This project is a central showcase for my personal projects. [The portfolio link
 
 ## Screenshot
 
-Use 1024px x 768px (4:3 ratio) size. Use Screen Snip with iPad view at portrait. Then crop with Paint 3D.
+Use 1024px x 768px (4:3 ratio) size. Use Screen Snip with iPad view at portrait. Then crop with Paint 3D > resize to 75%
 
 ## Tech stack
 
