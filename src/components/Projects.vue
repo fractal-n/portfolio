@@ -3,12 +3,7 @@
     <div class="py-12"></div>
 
     <v-container>
-      <h2
-        id="projects"
-        class="text-h2 font-weight-bold mb-3 text-uppercase text-center"
-      >
-        Projects
-      </h2>
+      <h2 id="projects" class="text-h2 font-weight-bold mb-3 text-uppercase text-center">Projects</h2>
 
       <v-responsive class="mx-auto mb-12" width="56">
         <v-divider class="mb-1"></v-divider>
@@ -38,15 +33,14 @@
           },
           i) in projects"
           :key="i"
-          cols="9"
-          md="3"
+          cols="12"
+          xl="4"
+          lg="6"
+          md="8"
+          class="center"
         >
-          <v-card img height="475px" width="300px">
-            <v-img
-              :src="getImage(screenshot)"
-              alt="project screenshot"
-              width="300px"
-            ></v-img>
+          <v-card>
+            <v-img :src="getImage(screenshot)" alt="project screenshot"></v-img>
 
             <v-card-title>
               <span>{{ name }}</span>
@@ -60,31 +54,27 @@
             <v-card-text>
               <v-container fluid>
                 <v-row>{{ description }}</v-row>
-                <v-row class="mt-2 align-baseline">
+                <v-row class="mt-2">
                   <v-chip
                     small
                     color="secondary"
                     class="mr-3 mt-2"
                     v-for="(name, i) in tags.frontend"
                     :key="i + 'front'"
-                    >{{ name }}</v-chip
-                  >
+                  >{{ name }}</v-chip>
                   <v-chip
                     small
                     color="primary"
                     class="mr-3 mt-2"
                     v-for="(name, i) in tags.backend"
                     :key="i + 'back'"
-                    >{{ name }}</v-chip
-                  >
+                  >{{ name }}</v-chip>
                 </v-row>
               </v-container>
             </v-card-text>
 
             <v-card-actions>
-              <v-btn :href="appUrl" target="_blank" color="success"
-                >See Demo</v-btn
-              >
+              <v-btn :href="appUrl" target="_blank" color="success">See Demo</v-btn>
               <v-spacer></v-spacer>
               <v-btn icon :href="repoUrl" target="_blank">
                 <v-icon large>mdi-github</v-icon>
@@ -104,7 +94,7 @@ import data from "../store/projects.json";
 
 export default {
   data: () => ({
-    projects: data.projects,
+    projects: data.projects
   }),
   computed: {
     // I was thinking about allowing user to filter tags using tag group, but it seems to take more time to do this than I initially thought
@@ -118,7 +108,14 @@ export default {
   methods: {
     getImage(fileName) {
       return require(`../assets/${fileName}`);
-    },
-  },
+    }
+  }
 };
 </script>
+
+<style scoped>
+.center {
+  display: flex;
+  justify-content: center;
+}
+</style>
