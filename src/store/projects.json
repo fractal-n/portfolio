@@ -4,7 +4,7 @@
       "name": "face-detector",
       "repoUrl": "https://github.com/fractal-n/face-detector",
       "appUrl": "https://fractal-n-face-detector.herokuapp.com/",
-      "description": "A small app ultilize Clariai to detect human faces in a selected picture.",
+      "description": "A small app ultilize Clarifai to detect human faces in a selected picture.",
       "screenshot": "face-detector-screenshot.png",
       "tags": {
         "frontend": ["ReactJS"],
