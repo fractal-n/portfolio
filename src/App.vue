@@ -18,10 +18,10 @@
       </v-btn>
     </v-app-bar>
 
-    <v-content>
+    <v-main>
       <Intro />
       <Projects />
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 

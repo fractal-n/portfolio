@@ -1,12 +1,26 @@
 {
   "projects": [
     {
+      "name": "face-detector",
+      "repoUrl": "https://github.com/fractal-n/face-detector",
+      "appUrl": "https://fractal-n-face-detector.herokuapp.com/",
+      "description": "A small app ultilize Clariai to detect human faces in a selected picture.",
+      "screenshot": "face-detector-screenshot.png",
+      "tags": {
+        "frontend": ["ReactJS"],
+        "backend": ["NodeJS", "PostgreSQL"]
+      },
+      "favorite": false
+    },
+    {
       "name": "portfolio",
       "repoUrl": "https://github.com/fractal-n/portfolio",
       "appUrl": "https://fractal-n.github.io/portfolio/",
       "description": "My portfolio is built with VueJS and VuetifyJS and hosted on GitHub Pages.",
       "screenshot": "portfolio-screenshot.png",
-      "tags": ["VueJS", "VuetifyJS"],
+      "tags": {
+        "frontend": ["VueJS", "VuetifyJS"]
+      },
       "favorite": false
     },
     {
@@ -15,7 +29,9 @@
       "appUrl": "https://fractal-n.github.io/my-team/",
       "description": "A simple frontend project to learn React",
       "screenshot": "my-team-screenshot.png",
-      "tags": ["ReactJS", "Tachyons CSS"],
+      "tags": {
+        "frontend": ["ReactJS", "Tachyons CSS"]
+      },
       "favorite": false
     }
   ]
