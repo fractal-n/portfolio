@@ -10,9 +10,8 @@ Use 1024px x 768px (4:3 ratio) size. Use Screen Snip with iPad view at portrait.
 
 ## Tech stack
 
-VueJS
-VuetifyJS
-GitHub Pages
+- VueJS
+- VuetifyJS
 
 ## Deploy on GitHub Pages
 
