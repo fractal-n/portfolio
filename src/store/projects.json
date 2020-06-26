@@ -7,7 +7,7 @@
       "description": "A small app ultilize Clarifai to detect human faces in a selected picture.",
       "screenshot": "face-detector-screenshot.png",
       "tags": {
-        "frontend": ["ReactJS"],
+        "frontend": ["ReactJS", "Tachyons CSS"],
         "backend": ["NodeJS", "PostgreSQL"]
       },
       "favorite": false
@@ -27,10 +27,10 @@
       "name": "my-team",
       "repoUrl": "https://github.com/fractal-n/my-team",
       "appUrl": "https://fractal-n.github.io/my-team/",
-      "description": "A simple frontend project to learn React",
+      "description": "A simple frontend project to learn React and Redux.",
       "screenshot": "my-team-screenshot.png",
       "tags": {
-        "frontend": ["ReactJS", "Tachyons CSS"]
+        "frontend": ["ReactJS", "Tachyons CSS", "Redux"]
       },
       "favorite": false
     }
